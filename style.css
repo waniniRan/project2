@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <style>
+
     body{
         background-color: rgba(240,237,237);
-        background_image: url(project2.jpg);
+       /* background_image: url(Cpexels-artempodrez-7048036.jpg);*/
     }
     .body_index_bg{
         background-color: brown;
@@ -53,7 +45,4 @@ tr:hover{
     
 
     
-    </style>
-           </style> 
-</body>
-</html>
+    
