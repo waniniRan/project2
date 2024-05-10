@@ -1,48 +1,32 @@
-
-    body{
-        background-color: rgba(240,237,237);
-       /* background_image: url(Cpexels-artempodrez-7048036.jpg);*/
-    }
-    .body_index_bg{
-        background-color: brown;
-    }
- h1{
-text-align: left;
-color: rgb(8,253,171);
-text-decoration: none;
-text-transform: uppercase;
-font-style: normal;
-font-weight: bold;
-
+body{
+    background-color: antiquewhite;
+    
 }
-table{
-    border: 1px solid #373737;
-    border-collapse: collapse;
-    width:70%;
-
+h1{
+    color: black;
 }
-td{
-    border: 1px solid #373737;
-    padding:5px;
+p{
+    text-align: center;
+    color:black;
+}
+a:link,a:visited{
     text-align: left;
-    
+    background-color: rgb(215, 62, 62);
+    color: antiquewhite;
+    padding: 20px 20px;
+    text-align: center;
+    display: inline-block;
+
 }
-th{
-    background-color: rgba(209,205,255);
-    color: azure;
-    border:1px;
+a:hover,a:active{
     text-align: left;
-
-}
-tr:nth-child(odd){
-    background-color: blanchedalmond;
-
-}
-tr:hover{
-    background-color: burlywood;
+    color: rgb(8, 104, 8);
 }
 
-    
 
-    
-    
+.footer{
+    color: antiquewhite;
+    text-align: right;
+
+}
+
