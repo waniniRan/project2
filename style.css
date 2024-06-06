@@ -1,5 +1,4 @@
-:root{
-
+.root{
 --pink:#e84393;
 }
 
@@ -24,6 +23,23 @@ section{
     padding:3rem 9% ;
 
 }
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background:#333;
+    color:#fff;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover{
+    background:var(--pink);
+}
+
+
 header{
     position: fixed;
     top: 0;left: 0;right: 0;
@@ -58,7 +74,7 @@ header .icons a{
     margin-left: 1.5rem;
 }
 header .icons a:hover{
-    color:var(--pink);
+    color:#b40a5c;
 }
 header #toggler {
     display: none;
@@ -85,10 +101,10 @@ header .fa-bars{
 }
 
 .home .content{
- max-width: 50rem;
+ max-width: 5rem;
 }
 .home .content h3{
-font-size: 6rem;
+font-size: 3.5rem;
 color: #333;
 }
 .home .content span{
@@ -97,15 +113,12 @@ color: #333;
     padding: 1rem 0;
     line-height:1.5;
 }
-.home .content {
+.home .content p {
     font-size: 6rem;
-    color: #999;
+    color:#e84393;
     padding: 1rem 0;
     line-height: 1.5;
-}    
-.btn{
-
-}
+}   
     
 
 
