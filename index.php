@@ -28,7 +28,7 @@
 
 
 
-<?php include_once("Templates/icons.php"); ?>
+   <?php include_once("Templates/icons.php"); ?>
   </header>
 
   <!--header section ends here-->  
