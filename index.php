@@ -24,13 +24,10 @@
     <a href="#" class="logo">GardenGrace<span>.</span></a>
 
 
-   <nav class="navbar">
-    <a href="#">Home</a> 
-    <a href="#">About Us</a> 
-    <a href="#">Products</a> 
-    <a href="#">Reviews </a>  
-    <a href="#">Contact</a> 
-   </nav>
+   <?php  include_once(Templates/"nav.php"); ?>
+
+
+
 <div class="icons">
   <a href="#" class="fas fa-heart"></a>
   <a href="#" class="fas fa-shopping-cart"></a>
