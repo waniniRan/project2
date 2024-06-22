@@ -28,39 +28,3 @@
 
    <?php include_once("Templates/icons.php"); ?>
   </header>
-
-  <!--header section ends here-->  
-
-
-
-  <!--home section starts here-->
-
-<section class="home" id="home">
-  <div class="content">
-<h3></h3>
-<h3></h3><br>
-<p></p><br>
-<a href="#" class="btn">Shop Now</a>
-</div>
-</section>
-
-
-
-  <!--home section ends here-->
-
-
-
-
-<div>
-  <?php include_once ("templates/side_bar.php"); ?>
-
-</div>
-
-  <?php include_once ("templates/footer.php"); ?>
-
-
-
-
-  
-</body>
-</html>

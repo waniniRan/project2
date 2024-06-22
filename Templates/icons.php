@@ -1,3 +1,5 @@
+
+  <label for="toggler" class=" fas fa-bars"></label>
 <div class="icons">
   <a href="#" class="fas fa-heart"></a>
   <a href="#" class="fas fa-shopping-cart"></a>
