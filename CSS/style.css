@@ -2,6 +2,7 @@
 --pink:#e84393;
 }
 
+
 *{
     margin: 0; padding: 0;
     box-sizing: border-box;
@@ -20,8 +21,7 @@ html{
 }
 
 section{
-    padding:3rem 9% ;
-
+    padding:2rem 9% ;
 }
 
 .btn{
@@ -104,20 +104,20 @@ header .fa-bars{
  max-width: 5;
 }
 .home .content h3{
-font-size: 3.5rem;
+font-size: 2.5rem;
 color: #333;
 }
 .home .content span{
-    font-size: 3.5rem;
+    font-size:2.5rem;
     color:var(--pink);
     padding: 1rem 0;
     line-height:1.5;
 }
-.home .content p {
-    font-size: 6rem;
-    color:#e84393;
+.home .content p{
+    font-size: 1rem;
+    color:#999;
     padding: 1rem 0;
-    line-height: 1.5;
+    line-height:1.5;
 }   
     
 

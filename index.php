@@ -18,18 +18,22 @@
 
   <header>
 
-  <input type="checkbox" name="" id="toggler">
-    <a href="#" class="logo">GardenGrace<span>.</span></a>
+   <input type="checkbox" name=" " id="toggler">
+   <label for="toggler" class="fas fa-bars"></label>
+
+   <a href="#" class="logo">GardenGrace<span>.</span></a>
+   
 
 
    <?php  include_once("Templates/nav.php"); ?>
-
-
-
+   
    <?php include_once("Templates/icons.php"); ?>
-  </header>
 
-  <!--header section ends here-->  
+  </header>
+  <!--header section ends here-->
+
+  
+
 
 
 
@@ -37,9 +41,10 @@
 
 <section class="home" id="home">
   <div class="content">
-<h3></h3>
-<h3></h3><br>
-<p></p><br>
+
+<h3>Fresh Flowers</h3>
+<span>Natural and Beautiful Flowers</span>
+<p></p>
 <a href="#" class="btn">Shop Now</a>
 </div>
 </section>
@@ -49,14 +54,11 @@
   <!--home section ends here-->
 
 
-
-
+  
 <div>
-  <?php include_once ("templates/side_bar.php"); ?>
-
 </div>
 
-  <?php include_once ("templates/footer.php"); ?>
+  <?php include_once ("Templates/footer.php"); ?>
 
 
 
