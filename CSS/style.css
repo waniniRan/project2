@@ -1,5 +1,5 @@
 .root{
---pink:#e84393;
+--pink:#e44793;
 }
 
 
@@ -23,7 +23,6 @@ html{
 section{
     padding:2rem 9% ;
 }
-
 .btn{
     display: inline-block;
     margin-top: 1rem;
@@ -34,11 +33,9 @@ section{
     cursor: pointer;
     font-size: 1.7rem;
 }
-
 .btn:hover{
-    background:var(--pink);
+    background: var(--pink);
 }
-
 
 header{
     position: fixed;

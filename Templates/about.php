@@ -42,16 +42,44 @@
 <section class="home" id="home">
   <div class="content">
 
-<h3>Fresh Flowers</h3>
-<span>Natural and Beautiful Flowers</span>
-<p></p>
-<a href="#" class="btn">Shop Now</a>
-</div>
-</section>
+
 
 
 
   <!--home section ends here-->
+
+<!--about section starts -->
+
+<section class="about" id="about">
+
+<h1 class="heading"> <span>About</span> Us</h1>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--about section ends here-->
+
+
+
+
+
+
+
+
+
+
+
 
 
   
@@ -66,3 +94,5 @@
   
 </body>
 </html>
+
+
