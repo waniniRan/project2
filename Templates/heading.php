@@ -23,10 +23,7 @@
 
    <a href="#" class="logo">GardenGrace<span>.</span></a>
    
-
-
-   <?php  include_once("Templates/nav.php"); ?>
-   
+   <?php include_once("Templates/nav.php"); ?>
    <?php include_once("Templates/icons.php"); ?>
 
   </header>

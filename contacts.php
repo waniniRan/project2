@@ -1,62 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE-edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flowers</title>
-  
-  <!--font awsesome cdn link-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" >
-<!--custom css file link-->
-
-<link rel="stylesheet" href="CSS/style.css">
-</head>
-<body>
-
-  <!--header section starts here-->
-
-  <header>
-
-   <input type="checkbox" name=" " id="toggler">
-   <label for="toggler" class="fas fa-bars"></label>
-
-   <a href="#" class="logo">GardenGrace<span>.</span></a>
-   
-
-
-   <?php  include_once("Templates/nav.php"); ?>
-   
-   <?php include_once("Templates/icons.php"); ?>
-
-  </header>
-  <!--header section ends here-->
-
-  
+   <?php include_once("Templates/heading.php"); ?>
 
 
 
-
-  <!--home section starts here-->
-
-<section class="home" id="home">
-  <div class="content">
-
-
-
-
-
-  <!--home section ends here-->
-
-<!--about section starts -->
 
 <section class="contact" id="contact">
 
-
-
 <?php require_once ("includes/db_connect.php"); ?>
-
-
 
 <?php
 if(isset($_POST["send_message"])){
@@ -80,10 +29,10 @@ if(isset($_POST["send_message"])){
 <div class="row">
     <div class="contents">
     <h1 class="heading"> <span>Talk To Us</span> <br><br> </h1>
-    <form action=""<?php print htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" class="contacts_form">
-        <label for="fn"><span>Fullname:</span></label><br><br>
+    <form action="<?php print htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" class="contacts_form">
+        <label for="fn"><h1>Fullname:</h1></label><br><br>
 
-        <input type="text" id="fn" placeholder="Fullname" name="Fullname" required><br><br>
+        <input type="text" id="fn" placeholder="Fullname" name="fullname" required><br><br>
 
         <label for="em">Email Address:</label><br>
         <input type="email" id="em" placeholder="Email Address" name="email_address" required><br><br>
@@ -92,29 +41,22 @@ if(isset($_POST["send_message"])){
         <select name="subject_line" id="sb" required>
             <option value="">---Select Subject-</option>
             <option value="Email Support">Email Support</option>
-            <option value="eLearning Support">eLearning Support</option>
-            <option value="AMS Support">AMS Support</option>
+            <option value="Sale support">Sales Support</option>
+            
         </select><br><br>
 
-        <label for="sb">Message:</label><br>
+        <label for="sb"><h1>Message:</h1></label><br>
                 <textarea name="client_message" id="" cols="30" rows="5" required></textarea><br><br>
        
         <input type="submit" name="send_message" value="Send Message">
     </form>
 </div>
-
-
-
-
 </section>
 
 
 <!--about section ends here-->
 
 
-  
-<div>
-</div>
 
   <?php include_once ("Templates/footer.php"); ?>
 
