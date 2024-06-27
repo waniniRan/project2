@@ -32,10 +32,6 @@
   </header>
   <!--header section ends here-->
 
-  
-
-
-
 
   <!--home section starts here-->
 
@@ -48,26 +44,10 @@
 <a href="#" class="btn">Shop Now</a>
 </div>
 </section>
-
-
-
   <!--home section ends here-->
 
+
 <!--about section starts -->
-
-<section class="about" id="about">
-
-<h1 class="heading"> <span>About</span> Us</h1>
-
-
-</section>
-
-
-
-
-
-
-
 
 
 

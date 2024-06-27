@@ -32,19 +32,11 @@
   </header>
   <!--header section ends here-->
 
-  
-
-
-
 
   <!--home section starts here-->
 
 <section class="home" id="home">
   <div class="content">
-
-
-
-
 
   <!--home section ends here-->
 
@@ -52,21 +44,20 @@
 
 <section class="about" id="about">
 
-<h1 class="heading"> <span>About</span> Us</h1>
+<h1 class="heading"> <span>about </span>us</h1>
+
+
+<div class="row">
+
+
+  <div class="content">
+    <h3>Why choose us?</h3>
+    <p>Lorem ipsum dolor sit amet</p>
+    <p>Lorem ipsum dolor sit amet</p>
+    <a hre="#" class="btn">Learn More</a>
 
 
 </section>
-
-
-
-
-
-
-
-
-
-
-
 
 <!--about section ends here-->
 

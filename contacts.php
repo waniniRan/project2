@@ -1,11 +1,10 @@
    <?php include_once("Templates/heading.php"); ?>
 
 
-
-
 <section class="contact" id="contact">
 
 <?php require_once ("includes/db_connect.php"); ?>
+
 
 <?php
 if(isset($_POST["send_message"])){
@@ -24,7 +23,6 @@ if(isset($_POST["send_message"])){
     }
 }
 ?>
-
 
 <div class="row">
     <div class="contents">
@@ -50,7 +48,7 @@ if(isset($_POST["send_message"])){
        
         <input type="submit" name="send_message" value="Send Message">
     </form>
-</div>
+           </div>
 </section>
 
 
