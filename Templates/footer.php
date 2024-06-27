@@ -1,5 +1,5 @@
 <div class="footer">
-            Copyright GardenGrace &copy; Allrights reserved 
+            Copyright  &copy;GardenGrace <?php print date("Y"); ?> - Allrights Reserved 
         </div>
     </body>
 </html>
