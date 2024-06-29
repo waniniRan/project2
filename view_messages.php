@@ -3,8 +3,6 @@
     
 
 
-
-
     if(isset($_GET["DelId"])){
         $DelId = mysqli_real_escape_string($conn, $_GET["DelId"]);        
 
@@ -19,6 +17,7 @@
         }
     }
 ?>
+
 <div class="row">
             <div class="content">
                 <h1>Messages</h1>
@@ -49,7 +48,7 @@
             <td><?php print $sel_msg_row["sender_email"]; ?></td>
             <td><?php print "<strong>" . $sel_msg_row["subject_line"] .'</strong> - ' . substr($sel_msg_row["text_message"], 0, 20) . '...' ; ?></td>
             <td><?php print date("d-M-Y H:i", strtotime($sel_msg_row["datecreated"])); ?></td>
-            <td>[ <a href="edit_msg.php?messageId=<?php print $sel_msg_row["messageId"]; ?>">Edit</a> ] [ <a href="?DelId=<?php print $sel_msg_row["messageId"]; ?>">Del</a> ]</td>
+            <td>[ <a href="edit_message.php?messageId=<?php print $sel_msg_row["messageId"]; ?>">Edit</a> ] [ <a href="?DelId=<?php print $sel_msg_row["messageId"]; ?>">Del</a> ]</td>
         </tr>
 <?php
         }
