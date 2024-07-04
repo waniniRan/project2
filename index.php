@@ -56,13 +56,40 @@
 <!--about section ends here-->
 
 
+<!---footer section starts here--->
+
+<section class="footer">
+
+<div class="box-container">
+  <div class="box">
+   <h3>Quick Links </h3>
+   <a href="#">Home</a>
+   <a href="#">About</a>
+   <a href="#">View Message</a>
+   <a href="#">Products</a>
+    <a href="#">Contacts</a>
+  </div>
+
+    <div class="box">
+      <h3>extra Links </h3>
+      <a href="#">my account</a>
+      <a href="#">my orders</a>
+      <a href="#">my favourites</a>
+      <a href="#">review</a>
+      <a href="#">contacts</a>
 
 
+    </div>
 
 
-  <?php include_once ("Templates/footer.php"); ?>
+        <div class="credit">
+            Copyright  &copy;GardenGrace <?php print date("Y"); ?> - Allrights Reserved 
+        </div>
+</div>   
+</section>
 
 
+  <!---footer section ends here--->
 
 
   

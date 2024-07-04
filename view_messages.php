@@ -1,5 +1,8 @@
+
 <?php
     require_once ("includes/db_connect.php");
+    
+
     
 
 
@@ -18,8 +21,10 @@
     }
 ?>
 
+
 <div class="row">
             <div class="content">
+           
                 <h1>Messages</h1>
         <table>
             <thead>
