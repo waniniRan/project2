@@ -13,5 +13,19 @@
 <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
+<header>
+
+<input type="checkbox" name=" " id="toggler">
+<label for="toggler" class="fas fa-bars"></label>
+
+<a href="#" class="logo">GardenGrace<span>.</span></a>
+
+
+
+<?php  include_once("Templates/nav.php"); ?>
+
+<?php include_once("Templates/icons.php"); ?>
+
+</header>
 
  

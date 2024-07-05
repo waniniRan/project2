@@ -1,12 +1,10 @@
-@import url('contact.css');
-
 .root{
---pink:#e44793;
+--pink:#b40a5c;
 }
 
 
 *{
-    margin: 0; padding: 10%;
+    margin: 0; padding: 0%;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     outline: none; border:none;
@@ -53,7 +51,7 @@ section{
     font-size: 1.7rem;
 }
 .btn:hover{
-    background: var(--pink);
+    background:#b40a5c;
 }
 
 header{
@@ -82,7 +80,7 @@ header .navbar  a{
     color:#333;
 }
 header .navbar a:hover{
-    color:var(--pink);
+    color:#b40a5c;
 }
 header .icons a{
     font-size:2rem;
