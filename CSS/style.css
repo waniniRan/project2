@@ -1,10 +1,12 @@
+@import url('contact.css');
+
 .root{
 --pink:#e44793;
 }
 
 
 *{
-    margin: 0; padding: 0;
+    margin: 0; padding: 10%;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     outline: none; border:none;
@@ -212,5 +214,5 @@ font-size: 5rem;
     }
 }
 
-
+@import url('contact.css');
 

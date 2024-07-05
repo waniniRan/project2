@@ -1,12 +1,8 @@
-   <?php include_once("Templates/heading.php"); ?>
+<?php include_once("Templates/heading.php");
+      include_once("Templates/nav.php");
+      include_once("Templates/icons.php");
+     require_once ("includes/db_connect.php");
 
-
-<section class="contact" id="contact">
-
-<?php require_once ("includes/db_connect.php"); ?>
-
-
-<?php
 if(isset($_POST["send_message"])){
     $fn = $_POST["fullname"];
     $mail = $_POST["email_address"];
@@ -23,41 +19,39 @@ if(isset($_POST["send_message"])){
     }
 }
 ?>
-
-<div class="row">
-    <div class="contents">
-    <h1 class="heading"> <span>Talk To Us</span> <br><br> </h1>
+<section class="contact" id="contact">
+           <h1 class="heading"> <span> talk to</span> us</h1>
+  <div class="row">   
+    
+    
     <form action="<?php print htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" class="contacts_form">
         <label for="fn"><h1>Fullname:</h1></label><br><br>
 
-        <input type="text" id="fn" placeholder="Fullname" name="fullname" required><br><br>
+        <input type="text" id="fn" placeholder="Fullname" name="fullname" class+="box "required><br><br>
 
         <label for="em">Email Address:</label><br>
-        <input type="email" id="em" placeholder="Email Address" name="email_address" required><br><br>
+        <input type="email" id="em" placeholder="Email Address" name="email_address" class="box" required><br><br>
 
         <label for="sb">Subject:</label><br>
-        <select name="subject_line" id="sb" required>
+        <select name="subject_line" id="sb" class="box "required>
             <option value="">---Select Subject-</option>
             <option value="Email Support">Email Support</option>
             <option value="Sale support">Sales Support</option>
             
         </select><br><br>
 
+
         <label for="sb"><h1>Message:</h1></label><br>
-                <textarea name="client_message" id="" cols="30" rows="5" required></textarea><br><br>
+                <textarea name="client_message" class="box" id="" cols="30" rows="5"  required></textarea><br><br>
        
         <input type="submit" name="send_message" value="Send Message">
     </form>
-           </div>
+   </div>
 </section>
-
-
-<!--about section ends here-->
 
 
 
   <?php include_once ("Templates/footer.php"); ?>
 
   
-</body>
-</html>
+

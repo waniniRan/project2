@@ -1,75 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <br>
-    <style>
-        body {
-          background-image: url('pexels-artempodrez-7048037.jpg');
-          background-attachment:fixed ;
-          background-repeat: no-repeat;
-          background-size: 100% 100%;
-    
-        }
-        </style>
+<?php include_once("Templates/heading.php"); ?>
 
-    <h3 style="font-style: Lato;
-    color:rgb(6, 43, 6); text-align:left;">
-    <font size="5">
-        GREEN EARTH MOVEMENT</font>
-       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-   
-       
-       
-       <font face="cinzel" size="4">
-           <style>a:link {
-               color: rgb(14, 223, 14);
-               background-color: transparent;
-               text-decoration:none;
-             }
-             
-             a:visited {
-               color:pink;
-               background-color: transparent;
-               text-decoration: none;
-             }
-             
-             a:hover {
-               color: rgb(88,13,13);
-               background-color: transparent;
-               text-decoration: underline;
-             }
-             
-             a:active {
-               color: rgb(243, 243, 83);
-               background-color: transparent;
-               text-decoration: underline;
-             }</style>
-           <a href="index.html">Home</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-           <a href="about.html">About Us</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-           <a href="news.html">News</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-           <a href="donation.html">Donations </a>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-           <a href="r.html">Log In</a> 
-           <body>
+
+<section class="contact" id="contact">
+
+<?php require_once ("includes/db_connect.php"); ?>
+
+
+<?php
+if(isset($_POST["send_message"])){
+    $fn = $_POST["fullname"];
+    $mail = $_POST["email_address"];
+    $subject = $_POST["subject_line"];
+    $message = $_POST["client_message"];
+
+    $insert_message = "INSERT INTO messages (sender_name, sender_email, subject_line, text_message) VALUES ('$fn', '$mail', '$subject', '$message')";
+
+    if ($conn->query($insert_message) === TRUE) {
+        header("Location: contacts.php");
+        exit();
+    } else {
+        echo "Error: " . $insert_message . "<br>" . $conn->error;
+    }
+}
+?>
+
+<div class="row">
+    <div class="contents">
+    <h1 class="heading"> <span>Talk To Us</span> <br><br> </h1>
+    <form action="<?php print htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" class="contacts_form">
+        <label for="fn"><h1>Fullname:</h1></label><br><br>
+
+        <input type="text" id="fn" placeholder="Fullname" name="fullname" required><br><br>
+
+        <label for="em">Email Address:</label><br>
+        <input type="email" id="em" placeholder="Email Address" name="email_address" required><br><br>
+
+        <label for="sb">Subject:</label><br>
+        <select name="subject_line" id="sb" required>
+            <option value="">---Select Subject-</option>
+            <option value="Email Support">Email Support</option>
+            <option value="Sale support">Sales Support</option>
             
-            <h3 style="font-style: Lato;
-            color:rgb(142, 26, 45); text-align:center;">
-            <font size="5"> 
-              <br<br><br><br>
-                   Do you want to be part of the change?
-                <br><br><br><br>
-                  GET THE LATEST ENVIRONMENTAL NEWS!!! </font>
-            </h3>
-           </body>
-           
-       </font>
-   </h3>
+        </select><br><br>
 
+        <label for="sb"><h1>Message:</h1></label><br>
+                <textarea name="client_message" id="" cols="30" rows="5" required></textarea><br><br>
+       
+        <input type="submit" name="send_message" value="Send Message">
+    </form>
+           </div>
+</section>
+
+
+<!--about section ends here-->
+
+
+
+  <?php include_once ("Templates/footer.php"); ?>
+
+  
 </body>
 </html>
