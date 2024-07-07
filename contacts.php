@@ -1,6 +1,4 @@
 <?php include_once("Templates/heading.php");
-      include_once("Templates/nav.php");
-      include_once("Templates/icons.php");
      require_once ("includes/db_connect.php");
 
 if(isset($_POST["send_message"])){
@@ -20,8 +18,8 @@ if(isset($_POST["send_message"])){
 }
 ?>
 <section class="contact" id="contact">
-           <h1 class="heading"> <span> talk to</span> us</h1>
-  <div class="row">   
+           <h1 class="heading"> <span> Talk to</span> Us</h1>
+  <div class="rows">   
     
     
     <form action="<?php print htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" class="contacts_form">

@@ -1,32 +1,128 @@
-.contact .row{
+/* General Reset and Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* Section Styling */
+section.contact {
+    padding: 2rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+
+
+/* Form Container */
+.rows {
+    margin: 5rem auto;
+    padding: 0 3rem;
     display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
+    align-content: center;
+    align-items:baseline;
     
+}
+
+/* Form Styling */
+.contacts_form {
+    width: 100%;
+    max-width: 600px;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-top: 1rem;
+}
+
+.contacts_form label {
+    font-size: 1.2rem;
+    color: #555;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.contacts_form input[type="text"],
+.contacts_form input[type="email"],
+.contacts_form select,
+.contacts_form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+    font-size: 1rem;
+}
+
+.contacts_form input[type="text"]:focus,
+.contacts_form input[type="email"]:focus,
+.contacts_form select:focus,
+.contacts_form textarea:focus {
+    border-color:#b40a5c;
+    outline: none;
+    box-shadow: 0 0 5px rgba(232, 73, 29, 0.5);
+}
+
+.contacts_form input[type="submit"] {
+    background:#b40a5c;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background 0.3s ease;
+}
+
+.contacts_form input[type="submit"]:hover {
+    background:#b40a5c ;
 
 }
-.contact .row form{
-     flex:1 1 40rem ;
-     padding: 2rem 2.5rem;
-     box-shadow:0.5rem 1.5rem rgba(0,0,0,.1);
-     border:1rem solid rgba(0,0,0,.1) ;
-     background: #fff;
 
-}
-.contact .row form .box{
-padding:1rem ;
-font-size: 1.7rem;
-color: #eee;
-border: 1rem solid rgba(0,0,0,.1);
-border-radius: .5rem;
-margin:.7rem 0;
-width:100%;
-}
-.contact .row form .box{
-    border-color: var(--pink);
-}
-.contact .row form textarea{
-height: 15rem;
-resize:none;
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contacts_form {
+        width: 90%;
+    }
 
+    .heading {
+        font-size: 2rem;
+    }
+}
+
+/* Additional Styling */
+.contacts_form textarea {
+    resize: vertical;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
 }

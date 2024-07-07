@@ -1,7 +1,7 @@
 
 <?php
 require_once ("includes/db_connect.php");
-
+include_once ("Templates/heading.php");
 
 
 $messageId=mysqli_real_escape_string($conn, $_GET["messageId"]);
@@ -59,5 +59,5 @@ if(isset($_POST["update_message"])){
 </div>
 
 <div>
-<?php include_once ("templates/footer.php"); ?>
+<?php include_once ("Templates/footer.php"); ?>
 </div

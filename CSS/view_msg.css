@@ -1,0 +1,100 @@
+/* General Reset and Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container Styling */
+.row {
+    max-width: 1200px;
+    margin: 11rem auto;
+    padding: 0 2rem;
+}
+
+.content h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+table thead {
+    background:#b40a5c;
+    color: white;
+}
+
+table th,
+table td {
+    padding: 0.8rem;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Action Links Styling */
+table td a {
+    color:#b40a5c;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+table td a:hover {
+    color:#b40a5c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .row {
+        padding: 0 1rem;
+    }
+
+    table th, 
+    table td {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    table td a {
+        margin: 0 0.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    table th, 
+    table td {
+        padding: 0.3rem;
+        font-size: 0.8rem;
+    }
+    
+    table td a {
+        margin: 0 0.2rem;
+    }
+}

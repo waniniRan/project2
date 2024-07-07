@@ -1,6 +1,7 @@
 
 <?php
     require_once ("includes/db_connect.php");
+    include_once("Templates/heading.php");
     
    
     if(isset($_GET["DelId"])){
