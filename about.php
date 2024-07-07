@@ -44,8 +44,8 @@
 
 <section class="about" id="about">
 
-<h1 class="heading"> <span>about </span>us</h1>
-
+<h1 class="headingz"> <span>about </span>us</h1>
+<!--headingz is for the about page only---->
 
 <div class="row">
 

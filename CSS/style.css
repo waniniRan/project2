@@ -1,5 +1,6 @@
 @import url(contact.css);
 @import url(view_msg.css);
+@import url(about.css);
 .root{
 --pink:#b40a5c;
 }
@@ -28,7 +29,7 @@ section{
 
 .heading{
     text-align: center;
-    font-size: 3rem;
+    font-size: 4rem;
     color: #333;
     padding:5rem 0 ;
     margin: 6rem auto;
@@ -109,15 +110,15 @@ header .fa-bars{
     display:flex;
     align-items: center;
     min-height: 100vh;
-    
-   /*  background:url()no-repeat ;
+    background:url('Images\pexels-brandandpalms-768939.jpg');
+    background: no-repeat;
    background-size:cover;
-   background-position:center*/
+   background-position:center;
 
 }
 
 .home .content{
- max-width: 5;
+ max-width: 50rem;
 }
 .home .content h3{
 font-size: 2.5rem;
