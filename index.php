@@ -47,15 +47,6 @@
   <!--home section ends here-->
 
 
-<!--about section starts -->
-
-
-
-
-
-<!--about section ends here-->
-
-
 <!---footer section starts here--->
 
 <section class="footer">
