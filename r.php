@@ -1,3 +1,36 @@
-<?php ("Templates/heading.php");?>
-<?php("Templates/nav.php");?>
-<?php("Templates/icons.php");?>
+
+
+<?php
+// Sample data for a flower product
+/*the product and review page*/
+$product = [
+    'name' => 'Rose Bouquet',
+    'price' => 29.99,
+    'description' => 'A beautiful bouquet of fresh roses.',
+    'image' => 'rose_bouquet.jpg'
+];
+include_once("Templates/heading.php");
+?>
+
+
+<body>
+    <div class="container">
+        <header>
+            <h1>GardenGrace</h1>
+        </header>
+        <main>
+            <div class="product">
+                <img src="<?php echo $product['image']; ?>" alt="<?php echo $product['name']; ?>">
+                <h2><?php echo $product['name']; ?></h2>
+                <p class="price">$<?php echo number_format($product['price'], 2); ?></p>
+                <p class="description"><?php echo $product['description']; ?></p>
+                <button>Add to Cart</button>
+            </div>
+        </main>
+        <footer>
+            <?php ("Templates/footer.php");?>
+        </footer>
+    </div>
+</body>
+</html>
+
