@@ -14,10 +14,7 @@ include_once("Templates/heading.php");
 
 
 <body>
-    <div class="container">
-        <header>
-            <h1>GardenGrace</h1>
-        </header>
+    
         <main>
             <div class="product">
                 <img src="<?php echo $product['image']; ?>" alt="<?php echo $product['name']; ?>">
