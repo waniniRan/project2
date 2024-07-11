@@ -54,6 +54,7 @@ if(isset($_POST["update_message"])){
        
         <input type="submit" name="update_message" value="Update Message"> <br><br><br><br><br><br>
         <input type="hidden" name="messageId" value="<?php print $spot_msg_row["messageId"];?>
+        
      </form>
 
 </div>
