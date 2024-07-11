@@ -19,15 +19,15 @@ header {
 }
 
 header h1 {
-    color: #ff0066;
+    color: #b40a5c;
     margin: 0;
 }
 
 .product {
     background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
+    padding: 110px;
+    border-radius: 8px;
+    text-align:left;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -37,7 +37,7 @@ header h1 {
 }
 
 .product h2 {
-    color: #ff0066;
+    color: #b40a5c;
     font-size: 24px;
 }
 
@@ -54,7 +54,7 @@ header h1 {
 }
 
 button {
-    background-color: #ff0066;
+    background-color: #333;
     color: #ffffff;
     border: none;
     padding: 10px 20px;
@@ -64,7 +64,7 @@ button {
 }
 
 button:hover {
-    background-color: #e6005c;
+    background-color:#b40a5c;
 }
 
 footer {
@@ -76,6 +76,6 @@ footer {
 }
 
 footer p {
-    color: #ff0066;
+    color: #b40a5c;
     margin: 0;
 }

@@ -25,7 +25,7 @@ include_once("Templates/heading.php");
             </div>
         </main>
         <footer>
-            <?php ("Templates/footer.php");?>
+            <?php include_once ("Templates/footer.php");?>
         </footer>
     </div>
 </body>
