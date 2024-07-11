@@ -31,14 +31,15 @@ main {
 
 .about {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: column;
     gap: 20px;
 }
 
-.row {
+.rows {
     display: flex;
-    flex-wrap: wrap;
+flex-wrap: wrap;
     gap: 20px;
+    
 }
 
 .column {
@@ -47,7 +48,7 @@ main {
 }
 
 .column h2 {
-    font-size: 2em;
+    font-size: 2rem;
     color: #4CAF50;
 }
 

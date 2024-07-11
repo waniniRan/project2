@@ -3,7 +3,7 @@
 
     <main>
         <section class="about">
-            <div class="row">
+            <div class="rows">
                 <div class="column">
                     <h2>About Us</h2>
                     <p>Welcome to Flower Shop, your number one source for all things flowers. We're dedicated to giving you the very best of floral arrangements, with a focus on quality, customer service, and uniqueness.</p>
