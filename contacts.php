@@ -46,10 +46,8 @@ if(isset($_POST["send_message"])){
     </form>
    </div>
 </section>
-
-
-
+<div>
   <?php include_once ("Templates/footer.php"); ?>
-
+</div>
   
 
