@@ -35,6 +35,7 @@
                 </tr>
             </thead>
             <tbody>
+           
 
             <?php
         $select_msg = "SELECT * FROM `messages` ORDER BY datecreated DESC";
@@ -53,11 +54,13 @@
             <td><?php print date("d-M-Y H:i", strtotime($sel_msg_row["datecreated"])); ?></td>
             <td>[ <a href="edit_message.php?messageId=<?php print $sel_msg_row["messageId"]; ?>">Edit</a> ] [ <a href="?DelId=<?php print $sel_msg_row["messageId"]; ?>">Del</a> ]</td>
         </tr>
+        
 <?php
             }
         } else {
         echo "0 results";
         }
+        
 ?>
         </tbody>
  
