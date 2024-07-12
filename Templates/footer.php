@@ -2,28 +2,14 @@
 
 <div class="box-container">
   <div class="box">
-   <h3>Quick Links </h3>
-   <a href="#">Home</a>
-   <a href="#">About</a>
-   <a href="#">View Message</a>
-   <a href="#">Products</a>
-    <a href="#">Contacts</a>
+   <h3>Quick Links</h3>
+   <a href="index.php">Home</a>
+   <a href="about.php">About</a>
+   <a href="view_messages.php">View Message</a>
+   <a href="r.php">Products</a>
+    <a href="contacts.php">Contacts</a>
   </div>
-
-    <div class="box">
-      <h3>extra Links </h3>
-      <a href="#">my account</a>
-      <a href="#">my orders</a>
-      <a href="#">my favourites</a>
-      <a href="#">review</a>
-      <a href="#">contacts</a>
-
-
-    </div>
-
-
-        <div class="credit">
+      <div class="credit">
             Copyright  &copy;GardenGrace <?php print date("Y"); ?> - Allrights Reserved 
-        </div>
-</div>   
+        </div>   
 </section>

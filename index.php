@@ -49,7 +49,7 @@
 
 
 
-  <?php include_once("Tempaltes/footer.php");?>
+  <?php include_once("Templates/footer.php");?>
 
 
   
