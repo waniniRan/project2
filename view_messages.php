@@ -60,9 +60,7 @@
         }
 ?>
         </tbody>
- <div>
-    <?php include_once("Templates/footer.php");?>
-    </div>
+ 
 
 
         
