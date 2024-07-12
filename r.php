@@ -5,9 +5,9 @@
 /*the product and review page*/
 $product = [
     'name' => 'Rose Bouquet',
-    'price' => 29.99,
+    'price' => 3000ksh,
     'description' => 'A beautiful bouquet of fresh roses.',
-    'image' => 'rose_bouquet.jpg'
+    'img'=>\Images\download.webp
 ];
 include_once("Templates/heading.php");
 ?>
@@ -17,7 +17,7 @@ include_once("Templates/heading.php");
     
         <main>
             <div class="product">
-                <img src="<?php echo $product['image']; ?>" alt="<?php echo $product['name']; ?>">
+                <img src="<?php echo $product['img']; ?>" alt="<?php echo $product['name']; ?>">
                 <h2><?php echo $product['name']; ?></h2>
                 <p class="price">$<?php echo number_format($product['price'], 2); ?></p>
                 <p class="description"><?php echo $product['description']; ?></p>
