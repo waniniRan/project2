@@ -3,6 +3,7 @@
     require_once ("includes/db_connect.php");
     include_once("Templates/heading.php");
     
+    
    
     if(isset($_GET["DelId"])){
         $DelId = mysqli_real_escape_string($conn, $_GET["DelId"]);        
@@ -35,7 +36,7 @@
                 </tr>
             </thead>
             <tbody>
-           
+            
 
             <?php
         $select_msg = "SELECT * FROM `messages` ORDER BY datecreated DESC";
