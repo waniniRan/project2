@@ -47,17 +47,9 @@
   <!--home section ends here-->
 
 
-<!---footer section starts here--->
-
-/*<section class="footer">
-        <div class="credit">
-            Copyright  &copy;GardenGrace <?php print date("Y"); ?> - Allrights Reserved 
-        </div>
-</div>   */
-</section>
 
 
-  <!---footer section ends here--->
+  <?php include_once("Tempaltes/footer.php");?>
 
 
   

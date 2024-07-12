@@ -54,13 +54,15 @@
             <td>[ <a href="edit_message.php?messageId=<?php print $sel_msg_row["messageId"]; ?>">Edit</a> ] [ <a href="?DelId=<?php print $sel_msg_row["messageId"]; ?>">Del</a> ]</td>
         </tr>
 <?php
-        }
+            }
         } else {
         echo "0 results";
         }
 ?>
         </tbody>
- 
+ <div>
+    <?php include_once("Templates/footer.php");?>
+    </div>
 
 
         
