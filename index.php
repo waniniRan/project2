@@ -49,14 +49,11 @@
 
 <!---footer section starts here--->
 
-<section class="footer">
-
-
-
+/*<section class="footer">
         <div class="credit">
             Copyright  &copy;GardenGrace <?php print date("Y"); ?> - Allrights Reserved 
         </div>
-</div>   
+</div>   */
 </section>
 
 
