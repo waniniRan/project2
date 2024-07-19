@@ -49,3 +49,8 @@ print $user_details["Secretary"]["email"]["phone"];
 <pre>
     <?php print_r($user_details);?>
 </pre>
+<?php 
+for ($x = 4; $x <= 10; $x++) {
+ echo "The number is: $x <br />";
+ }
+ ?> 
