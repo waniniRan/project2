@@ -38,9 +38,9 @@
 <section class="home" id="home">
   <div class="content">
 
-<h3>Fresh Flowers</h3>
-<span>Natural and Beautiful Flowers</span>
-<p></p>
+<h3>Fresh Flowers</h3> 
+<span>Natural and Beautiful Flowers</span> 
+
 <a href="#" class="btn">Shop Now</a>
 </div>
 </section>

@@ -10,7 +10,7 @@ if(isset($_POST["send_message"])){
     $insert_message = "INSERT INTO messages (sender_name, sender_email, subject_line, text_message) VALUES ('$fn', '$mail', '$subject', '$message')";
 
     if ($conn->query($insert_message) === TRUE) {
-        header("Location: contacts.php");
+        header("Location:contacts.php");
         exit();
     } else {
         echo "Error: " . $insert_message . "<br>" . $conn->error;
